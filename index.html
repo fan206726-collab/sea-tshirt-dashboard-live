@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN" data-page-node-id="wO25RwtMBUuNH9hM192CyJ">
+<head data-page-node-id="0STmdxneEF7zBdBXHoxFP5">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta charset="utf-8" data-page-node-id="WrBmlMsuRe3G4wyb8sD6Bn">
+<meta name="viewport" content="width=device-width, initial-scale=1" data-page-node-id="51SBV6XZsNqMmIM1EXjGGQ">
+<meta name="build" content="2026-11-09T05:18+08:00" data-page-node-id="WrBmlMsuRe3G4wyb8sD6Bn2">
+<meta http-equiv="Cache-Control" content="no-cache" data-page-node-id="WrBmlMsuRe3G4wyb8sD6Bn3">
+<title>T恤选品工作台</title>
+<link rel="stylesheet" href="style.css?v=202611090518" data-page-node-id="YD4AI1jIWI91sC6EycSLoC">
+</head>
+<body data-page-node-id="epzskflRLzpaDEmtZLJqgZ">
+<!-- build=2026-09-10b ts=202609101505 -->
+<aside class="sidebar" id="sidebar" data-page-node-id="cGNU6z0ap4HBkVnorTh3Yl">
+  <div class="sidebar-brand" data-page-node-id="ZxEhaTHYborNTQuGTw8nTe">🌐 工作台</div>
+  <nav class="nav" id="nav" data-page-node-id="DTpFbLDiK1d7glXUubLk01"></nav>
+</aside>
+
+<div class="layout" data-page-node-id="fIQATxg2Kz15vONu0nJQlY">
+  <header class="topbar" data-page-node-id="NuKa4cuFEXln2B0DoVzrkh">
+    <div class="brand" data-page-node-id="Pohivesvhx46IPRvGdTcRK">跨境运营情报工作台</div>
+    <div class="meta" data-page-node-id="QjaUWnHlHhZNffNTwb1qXp">数据日期：<span id="report-date" data-page-node-id="1CgAb2uHTeNG7yk7EyX1OE">—</span> · 覆盖 🇹🇭泰国 + 🇲🇾马来西亚 · 平台 Lazada / Shopee / TikTok</div>
+    <div class="warn" data-page-node-id="020pMBZkTeeopuWyFqgL1f">⚠️ 店铺 GMV / 订单数值尚未接入，页面不展示未采集数据；内容板块数据日期 <span id="report-date-warn" data-page-node-id="7Uf1ZUUIk6JpD4J2NfjLgZ">—</span>（云端每日刷新，早于当日的条目按「时间×热度」窗口过滤）</div>
+    <div class="meta-updated" data-page-node-id="QVOTZAgn0vEcb4HN3ECTFM">最近更新：<span id="updated-at" data-page-node-id="DEzeGfYbAXMpL5H8ytiBBF">—</span></div>
+  </header>
+
+  <main class="main" data-page-node-id="ntnDcPDGcJQdw2OiGWkMi4">
+    <!-- 全局「时间 × 热度」筛选条（数据层已逐条打标 t/win/h/hl，前端只做视图收窄） -->
+    <div class="filters" id="th-filter-bar">
+      <span class="flabel">🕒 时间</span><span class="thf-group" id="thf-win"></span>
+      <span class="flabel">🔥 热度</span><span class="thf-group" id="thf-heat"></span>
+      <span id="thf-note"></span>
+    </div>
+    <section class="kpi-row" id="kpi-row" data-page-node-id="Pp5lSuLwVzD9DhUe4Dthmx"></section>
+
+    <div class="grid-group" data-page-node-id="P3VueVKWkqpGIDBEjjjXWc">
+      <h3 class="group-title" data-page-node-id="wZcNeK7cdMGag3bVDCsTG0"><span class="gt-ico" data-page-node-id="oUwAp9iBx48kpAgsDyq63d">📊</span>选品情报<span class="gt-sub" data-page-node-id="5EIqpmFbOORTyqqf4pEbyd">核心印花选品 · 竞品 / 搜索 / 爆款 / 热点</span></h3>
+      <div class="grid" data-page-node-id="Y3RVLOyfm4rklgAxfvL87G">
+      <section class="card span-12" id="sec-countdown" data-page-node-id="tzegQekfxqHVA84qC9SDXK">
+        <h2 data-page-node-id="ECrtpcqKJRyuiPVlRcA4Tw">📅 运营节点倒计时（泰国 🇹🇭 / 马来西亚 🇲🇷 / 全球 🌐 · 按距今天数）</h2>
+        <div class="sec-note" id="note-n_countdown"></div>
+        <div class="sec-note" id="note-n_holidays"></div>
+        <div class="filters" id="cd-filters"></div>
+        <div id="countdown-chart" class="chart" style="height:520px" data-page-node-id="pbJtTrx7QW2CfjeCznQTxs"></div>
+        <div class="cd-legend" id="cd-legend"></div>
+        <!-- 图表是 canvas，文字选不中也搜不到；这里给一份可读、可复制的最近节点清单 -->
+        <div id="cd-list" class="cd-list"></div>
+      </section>
+
+      <section class="card span-12" id="sec-onlinefest">
+        <h2>🌐 网络节日 &amp; 平台造节（主题词 · 精准搜索词 · 热度 · 优先级）</h2>
+        <div class="sec-note" id="note-n_online_festivals"></div>
+        <div id="onlinefest-body"></div>
+      </section>
+
+      <section class="card span-12" id="sec-market">
+        <h2>📈 市场大盘（泰马双站 · 客单价 / 份额 / 大盘）</h2>
+        <div class="meta-updated" style="margin:-6px 0 10px">数据基于当日联网检索 · 来源 Cube / 雨果网(Momentum Works) / Marketplace Pulse / Rising Trends / FastMoss · 均为公开真实数据</div>
+        <div id="market-body"></div>
+      </section>
+
+
+      <section class="card span-12" id="sec-competitor" data-page-node-id="WeDw3wtpFghgfVThK4a11Q">
+        <h2 data-page-node-id="F1XqwyTsbGR8latvoyrXQ5">🕵️ 竞品爆款监控</h2>
+        <div class="sec-note" id="note-competitors"></div>
+        <div class="filters" id="comp-filters" data-page-node-id="wfkF9lonMdKf6vGVoxWlBy"></div>
+        <div id="competitor-body" data-page-node-id="bMaRy1p2lfX3lUUToij4EX"></div>
+      </section>
+
+      <section class="card span-12" id="sec-search" data-page-node-id="uZnb64wlr2OVNWBhfx8Dlc">
+        <h2 data-page-node-id="GV6NTFGyKwyScMWD7RH2Ej">🔍 搜索词排名趋势</h2>
+        <div class="sec-note" id="note-search_rankings"></div>
+        <div class="filters" id="search-filters" data-page-node-id="mh1PnSHJ4Hduv8sgrfhifO"></div>
+        <div id="search-body" data-page-node-id="AKx9SXZjf6D1BTJTUH2DGQ"></div>
+      </section>
+
+      <section class="card span-12" id="sec-best" data-page-node-id="SNNiYS4oUL6ZH5rfwvAXz8">
+        <h2 data-page-node-id="3mTUrArgwwi0EoXQi15kEm">🏅 平台爆款 T恤</h2>
+        <div class="sec-note" id="note-bestsellers"></div>
+        <div class="filters" id="best-filters" data-page-node-id="C4oyJ5hqNkEJRxukCDzbBK"></div>
+        <div id="best-body" data-page-node-id="y61qzC2JbcdPsqO9catDC9"></div>
+      </section>
+
+      <section class="card span-6" id="sec-ip" data-page-node-id="s6qv183Dw3G6WwqDNwKyfK">
+        <h2 data-page-node-id="LqRBkD9IxGSMDlIPm8V9ne">🔥 IP / 关键词热点</h2>
+        <div class="sec-note" id="note-n_keywords"></div>
+        <div id="ip-body" class="tag-cloud" data-page-node-id="qP7EEfGBIJdUvPvBq1BZrd"></div>
+      </section>
+
+      <section class="card span-6" id="sec-global" data-page-node-id="M7ukCExmFrUBuq765yq9JE">
+        <h2 data-page-node-id="TrxilRRzZgNx0G6l1bAcwx">🌐 全球网络热门趋势</h2>
+        <div class="sec-note" id="note-global_trends"></div>
+        <div id="global-body" data-page-node-id="CQBOA8u7dlqXr7Z0Lmmw1l"></div>
+      </section>
+      </div>
+    </div>
+
+    <div class="grid-group" data-page-node-id="D6aGuzNRcIK3IeMlH5xDeZ">
+      <h3 class="group-title" data-page-node-id="jA574uvahNXcW88Ier51vG"><span class="gt-ico" data-page-node-id="bhWqCqMv4PZ0em8WulpWO1">🎭</span>内容灵感 · 印花机会<span class="gt-sub" data-page-node-id="FJIFGjf0jShyKiSk8u0mYW">娱乐档期 / 动漫电影 / 实时热搜 / 行业新闻</span></h3>
+      <div class="grid" data-page-node-id="1r11goDAp7ori2106KaI5Q">
+      <section class="card span-12" id="sec-entertainment" data-page-node-id="DsbbhvegeRY4uEZkBDCy1U">
+        <h2 data-page-node-id="XJ60QFHr3zGElYfzwhrRNF">🎬 娱乐档期前瞻（演唱会 / 演出 / 电影 / 新歌）</h2>
+        <div class="sec-note" id="note-entertainment"></div>
+        <div class="meta-updated" style="margin:-6px 0 10px" data-page-node-id="1Bv4pcZFJAaWBotEiKEOiP">窗口：未来约 3 个月 · 自动隐藏已过期场次 · 数据基于公开真实档期（WebSearch 采集）</div>
+        <div id="entertainment-body" data-page-node-id="TWimWGco9zciY5SlGrpyGl"></div>
+
+        <h3 class="sub-h" id="sec-anime" data-page-node-id="VJPTMlyNMNjpQDsuKuRSaF">🎞️ 动漫卡通电影（印花机会）</h3>
+        <div class="meta-updated" style="margin:-6px 0 10px" data-page-node-id="qvl0uEllrOCXnckfGEVtNI">2026 真实热点 IP（日本动画电影 / 好莱坞动画 / 东南亚原创）· 数据基于公开票房与榜单（WebSearch 采集）· 含 T恤印花机会与版权合规提示</div>
+        <div class="filters" id="anime-filters" data-page-node-id="N2DLEculqtB68xzJ4o8iun"></div>
+        <div id="anime-body" class="tag-cloud" data-page-node-id="lvru8kOXqa8PBuHrQW8hRq"></div>
+      </section>
+
+      <section class="card span-12" id="sec-hotsearch">
+        <h2>🔥 实时热搜（Google Trends · 泰/马/新/印尼/菲）</h2>
+        <div class="meta-updated" style="margin:-6px 0 10px">来源：<span id="hotsearch-src">—</span> · 抓取时间：<span id="hotsearch-at">—</span> · 每日 10:00 / 22:00 自动刷新</div>
+        <div id="hotsearch-body" class="hs-grid"></div>
+      </section>
+
+      <section class="card span-12" id="sec-news">
+        <h2>📰 行业新闻（泰/马 · 电商服饰）</h2>
+        <div class="meta-updated" style="margin:-6px 0 10px">来源：<span id="news-src">—</span> · 每日 10:00 / 22:00 自动刷新</div>
+        <div id="news-body" class="news-grid"></div>
+      </section>
+
+      <section class="card span-12" id="sec-livetrends" data-page-node-id="llmQVxCYhf7PL2ahLMwuFN">
+        <h2 data-page-node-id="htQhITNQxdeW4DNMbb8GHX">⚡ 实时热搜（Google Trends · 自动刷新）</h2>
+        <div class="meta-updated" style="margin:-6px 0 10px" data-page-node-id="6M3fCLXrBur8ImpnpfKADp">来源：Google Trends 泰国/马来西亚每日热搜 · <span id="livetrends-at" data-page-node-id="C2eemnd3PFzEhzdlDBko3Y">—</span></div>
+        <div id="livetrends-body" class="live-trends" data-page-node-id="9fDqlpsSGMaVD725VMdy8V"></div>
+      </section>
+
+      <section class="card span-12" id="sec-live" data-page-node-id="muNyavVidCNtBVic8YbLCq">
+        <h2 data-page-node-id="pOKHAyJUvqGstlVUi5cIzG">📡 数据源清单与实时快照</h2>
+        <div class="meta-updated" style="margin:-6px 0 10px">共 <span id="live-src-count">—</span> 个渠道 · 全部为程序直抓 · 点卡片打开人读页面，RSS 原始地址在详情里</div>
+        <div id="live-body" class="live-grid" data-page-node-id="Zo2E46W6WOa8Zg1vPIMqVI"></div>
+      </section>
+      </div>
+    </div>
+
+    <div class="grid-group" data-page-node-id="htITmI6RhhehvFTFS4TxlC">
+      <h3 class="group-title" data-page-node-id="GuBr1QRCUNIU0f9QFboQjx"><span class="gt-ico" data-page-node-id="NbMc3fF7A9B9g2DnGHSKMT">💱</span>经营数据<span class="gt-sub" data-page-node-id="dNk6I1Wu8IQrGJEiki1de7">汇率 / 天气 / 成本预警</span></h3>
+      <div class="grid" data-page-node-id="FXID0CKSLUja1VnY0CLKGf">
+      <section class="card span-12" id="sec-fx" data-page-node-id="ONHthu7AJxFRPqzDkNlYnq">
+        <h2 data-page-node-id="xpM5F7hCPFsFr3cghNLncS">💱 汇率 · 天气 · 成本预警</h2>
+        <div class="sec-note" id="note-n_fx"></div>
+        <div class="sec-note" id="note-n_weather"></div>
+        <div id="fx-body" class="fx-grid" data-page-node-id="gjcbGmHcNHi1tAQjY1DTw8"></div>
+      </section>
+      </div>
+    </div>
+  </main>
+</div>
+
+<footer class="foot" data-page-node-id="ncDRaCBNi8AXVYnnRo7AVP">
+  信息渠道：工作台自有 <span id="report-src-count" data-page-node-id="davodTO3c9BZmPiQTlq2nj">—</span> 类公开数据源程序直抓（Google Trends 泰/马热搜 · Google News 与 8 家泰马媒体 RSS · Open-Meteo 天气与空气质量 · open.er-api 汇率）× 泰🇹🇭 马🇲🇾，每日 10:00 / 22:00 自动刷新 · 店铺 GMV / 订单数值未接入，页面不展示
+</footer>
+
+<div class="drawer-backdrop" id="drawer-backdrop" data-page-node-id="ZI7RVqHHUdCi5r37GNppDd"></div>
+<aside class="drawer" id="drawer" data-page-node-id="6njwYeEnOt5NQ7cJ7kqAst">
+  <div class="drawer-head" data-page-node-id="iwBfoArvZtmd7BjuOJ0gZu">
+    <button class="drawer-close" id="drawer-close" aria-label="关闭" data-page-node-id="j6EAGulpsqHVWPR83tj8sI">✕</button>
+  </div>
+  <div class="drawer-body" id="drawer-body" data-page-node-id="d14Zv9wHdc48CL0BqY1m0I"></div>
+</aside>
+
+<script src="vendor/echarts.min.js"></script>
+<script src="app.js?v=202611090518"></script>
+<a id="xlink-report" href="report.html" style="position:fixed;right:18px;bottom:18px;z-index:99999;background:linear-gradient(135deg,#36c2b4,#4aa3ff);color:#00131a;font-weight:700;font-size:13px;line-height:1;padding:11px 16px;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.38);font-family:inherit">📄 热点趋势</a>
+</body>
+</html>
