@@ -1,0 +1,31 @@
+name: T恤看板全自动更新
+
+on:
+  schedule:
+    # 每天北京时间 10:00, 14:00, 18:00, 22:00 自动各执行一次
+    - cron: '0 2,6,10,14 * * *'
+  workflow_dispatch: # 支持手动点击按钮触发
+
+jobs:
+  run-auto-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+
+      - name: 启动 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 执行全自动数据更新
+        run: |
+          python auto_updater.py || python 自动更新程序 || python *.py
+
+      - name: 自动推送最新数据到线上
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: 云端定时同步最新选品数据 [skip ci]" || exit 0
+          git push
